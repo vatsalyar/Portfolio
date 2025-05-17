@@ -121,6 +121,42 @@
 
 @layer utilities {
 
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+  .animate-fade-in-left{
+    animation:fadeInLeft 0.5s ease-out forwards;
+  }
+
+  @keyframes waveHand {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60%, 100% { transform: rotate(0deg); }
+}
+
+.wave-hover {
+  display: inline-block;
+  transform-origin: 70% 70%; /* adjust based on your design */
+}
+
+.wave-hover:hover {
+  animation: waveHand 2s ease-in-out;
+}
+
+
   @keyframes fade-in-up {
     0% {
       opacity: 0;
