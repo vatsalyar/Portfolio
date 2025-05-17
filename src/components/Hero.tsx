@@ -5,9 +5,10 @@ import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline';
 
 const Hero = () => {
   return (
+    <>
     <section className="relative w-full h-full min-h-screen flex items-center justify-center mx-auto">
-        <div className="absolute w-full inset-0 max-w-7xl sm:mx-[250px] sm:px-16 px-6 flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:mt-[120px] mx-auto justify-center sm:mb-175 mt-auto ">
-            <div className="flex flex-col justify-center">
+        <div className="absolute w-full inset-0 max-w-7xl sm:px-16 px-6 flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:mt-[120px] mx-auto justify-center sm:mb-175 mt-auto ">
+            <div className="flex flex-col justify-center items-center">
             <img 
                 alt="hi"
                 src={hi}
@@ -26,7 +27,29 @@ const Hero = () => {
             <ChevronDoubleDownIcon className="w-8 h-8 text-white animate-bounce cursor-pointer" />
             </a>
         </div>
-        </section>
+      </section>
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 translate-y-25">
+        <svg
+          className="w-full h-[100px]"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+          <linearGradient id="heroFade" x1="1" y1="1" x2="0" y2="1">
+            <stop offset="0%" stopColor="#770a04" />
+            <stop offset="50%" stopColor="#9b3107" />
+            <stop offset="65%" stopColor="#000000" />
+          </linearGradient>
+
+          </defs>
+          <path
+            fill="url(#heroFade)"
+            d="M0,64L48,85.3C96,107,192,149,288,176C384,203,480,213,576,197.3C672,181,768,139,864,106.7C960,75,1056,53,1152,74.7C1248,96,1344,160,1392,192L1440,224V0H0Z"
+          />
+        </svg>
+      </div>
+    </>
   );
 };
 

@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import profilePic from '../assets/Hi.png';
+import profilePic from '../assets/profile.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   useEffect(() => {
@@ -13,7 +16,6 @@ const About = () => {
       id="About"
       className="w-full max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-10"
     >
-      {/* Avatar */}
       <div
         className="w-full lg:w-1/3 flex justify-center"
         data-aos="fade-right"
@@ -25,9 +27,8 @@ const About = () => {
         />
       </div>
 
-      {/* Text Content */}
       <div className="w-full lg:w-2/3 text-white space-y-6" data-aos="fade-left">
-        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 via-red-400 to-pink-500">
+        <h2 className="text-4xl font-bold ">
           About Me
         </h2>
 
@@ -45,14 +46,49 @@ const About = () => {
             </span>
           ))}
         </div>
-
-        <a
-          href="/Vatsalya_Resume.pdf"
+        <div className='flex gap-3 sm:gap-7'><a
+          href="https://www.linkedin.com/in/vatsalya-rastogi/"
           target="_blank"
-          className="inline-block mt-6 text-white bg-gradient-to-r from-red-400 to-orange-400 px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-transform"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
         >
-          Download Resume
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+          />
         </a>
+        <a
+          href="mailto:vatsalyarastogi04@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+          />
+        </a><a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faFilePdf}
+            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+          />
+        </a><a
+          href="https://github.com/vatsalyar"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+          />
+        </a>
+      </div>
       </div>
     </section>
   );
