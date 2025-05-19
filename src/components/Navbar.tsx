@@ -31,9 +31,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center py-4 fixed top-0 z-50 transition-all duration-300 ease-in-out ${
-        scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"
-      } text-white`}
+      className={`w-full flex items-center py-4 fixed top-0 z-50 transition-all duration-300 ease-in-out backdrop-blur-md bg-whie/30 rounded-xl p-6 shadow-lg`}
     >
       <div className="px-6 flex justify-between w-full overflow-visible">
         <a
@@ -72,7 +70,7 @@ const Navbar = () => {
           <div
             className={`${
                 !toggle ? "hidden" : "flex"
-              } flex-col p-6 bg-gradient-to-b from-black/80 via-red-800/80 to-orange-700/80 
+              } flex-col p-6  bg-black/80
                 backdrop-blur-md border border-white/10 
                 absolute top-20 right-6 min-w-[160px] 
                 z-10 rounded-xl shadow-2xl shadow-black/40 

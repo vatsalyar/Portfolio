@@ -1,17 +1,19 @@
 import { hi } from "@/assets";
 import { useEffect, useState } from "react";
 import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline';
+import StarCanvas from "./Stars";
+
 
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-full min-h-screen flex items-center justify-center mx-auto">
+    <section className="relative w-full h-screen flex items-center justify-center mx-auto z-20">
         <div className="absolute w-full inset-0 max-w-7xl sm:px-16 px-6 flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:mt-[120px] mx-auto justify-center sm:mb-175 mt-auto ">
             <div className="flex flex-col justify-center items-center">
             <img 
-                alt="hi"
+                alt="avatar"
                 src={hi}
-                className="w-[150px] h-[150px] rounded-full object-cover"
+                className="w-[150px] h-[150px] rounded-full object-cover animate-hello-wave"
             />
             </div>
             <div className="bg-glass p-5 rounded-xl">
@@ -21,11 +23,12 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 ">
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-50 ">
             <a href="#About">
             <ChevronDoubleDownIcon className="w-8 h-8 text-white animate-bounce cursor-pointer" />
             </a>
         </div>
+        <div className= "absolute inset-0 -z-10"><StarCanvas /></div>
       </section>
   );
 };
