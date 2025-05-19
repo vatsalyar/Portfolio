@@ -7,10 +7,10 @@ const App = () => {
   return (
     <div>
       <div
-        className="relative z-0 dark min-h-screen bg-no-repeat bg-center bg-cover"
-        style={{ backgroundImage: `url(${bg})` }}
+        className="relative z-0 min-h-screen w-full bg-no-repeat bg-center bg-cover "
       >
-        <div className="absolute inset-0 bg-black opacity-30 z-0" />
+        <img src={bg} alt="background" className="h-full w-auto object-contain" />
+        <div className="absolute inset-0 bg-black opacity-30 z-10" />
         <Navbar />
         <Hero />
       </div>
