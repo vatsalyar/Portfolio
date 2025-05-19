@@ -16,7 +16,7 @@ const Hero = () => {
                 className="w-[150px] h-[150px] rounded-full object-cover animate-hello-wave"
             />
             </div>
-            <div className="bg-glass p-5 rounded-xl">
+            <div className="bg-glass p-5 rounded-xl sm:top-0.5">
             <h1 className="mt-5 mb-5 text-5xl text-white font-garamond">
                 Hi, I'm <span className="gradient-sunset"><TypingText text="Vatsalya" /></span>
             </h1>

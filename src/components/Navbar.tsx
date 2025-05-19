@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { menu, close } from "../assets";
+import { menu, close, logo } from "../assets";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -39,23 +39,26 @@ const Navbar = () => {
           className="flex items-center gap-2"
           onClick={() => window.scrollTo(0, 0)}
         >
-            <p className={`text-4xl font-bold leading-normal pb-1 vatsalya-gradient-mobile`}>
-                Vatsalya
-            </p>
+            <img src={logo} alt="logo" className="animate-fade-in-left w-20 h-12"/> 
         </a>
 
-        <ul className="list-none hidden sm:flex gap-4 md:gap-6 items-center">
-          {["About", "Projects", "Experience", "Contact"].map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item}`}
-                className="hover-glow-gradient px-3 py-1 transition-all duration-300 ease-in-out"
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
+      <nav className="group/navigation-menu max-w-max flex-1 items-center justify-center absolute top-1/2 left-1/2 hidden w-fit -translate-x-1/2 -translate-y-1/2 rounded-full backdrop-blur-md md:flex">
+        <div className="relative">
+          <ul className="group flex-1 list-none items-center justify-center gap-1 relative hidden rounded-full border border-white/10 bg-white/5 px-1.5 py-1 md:flex">
+            {["About", "Projects", "Experience", "Contact"].map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item}`}
+                  className="hover-glow-gradient px-3 py-1 transition-all duration-300 ease-in-out"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+        
 
         <div ref={menuRef} className="sm:hidden flex justify-end items-center cursor-pointer">
         <img
