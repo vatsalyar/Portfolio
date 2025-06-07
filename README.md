@@ -97,4 +97,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-> Made with React, 3D, and a lot of ❤️ by Vatsalya Rastogi
+> Made by Vatsalya Rastogi
