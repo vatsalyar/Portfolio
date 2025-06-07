@@ -84,10 +84,10 @@ Then open your browser at [http://localhost:5173](http://localhost:5173)
 
 ## 🤝 Connect With Me
 
-* 🌐 Website: [vatsalyar.vercel.app](https://vatsalyar.vercel.app)
-* 💼 LinkedIn: [linkedin.com/in/vatsalyar](https://linkedin.com/in/vatsalyar)
+* 🌐 Website: [portfolio.vatsalya.wiki](https://vatsalya.wiki)
+* 💼 LinkedIn: [linkedin.com/in/vatsalya-rastogi](https://linkedin.com/in/vatsalya-rastogi)
 * 🧑‍💻 GitHub: [github.com/vatsalyar](https://github.com/vatsalyar)
-* 📧 Email: [rastogivatsalya@gmail.com](mailto:rastogivatsalya@gmail.com)
+* 📧 Email: [vatsalyarastogi04@gmail.com](mailto:vatsalyarastogi04@gmail.com)
 
 ---
 
