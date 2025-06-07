@@ -1,54 +1,100 @@
-# React + TypeScript + Vite
+# 🧑‍💻 Vatsalya Rastogi – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio! 🚀 A beautifully designed, interactive site to showcase my work, skills, and passion as a full-stack developer.
 
-Currently, two official plugins are available:
+> 💡 Built with React, TypeScript, Tailwind CSS, Three.js (via React Three Fiber), and Framer Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+▶️ **[Click Here](https://vatsalya.wiki)**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠 Tech Stack
+
+| Tech                  | Description                                     |
+| --------------------- | ----------------------------------------------- |
+| **React**             | JavaScript library for building user interfaces |
+| **TypeScript**        | Strong typing layer over JavaScript             |
+| **Tailwind CSS**      | Utility-first CSS framework                     |
+| **Framer Motion**     | Library for animations and transitions          |
+| **Three.js**          | 3D rendering and graphics engine                |
+| **React Three Fiber** | React renderer for Three.js                     |
+| **Vite**              | Lightning-fast dev server and bundler           |
+| **Vercel**            | Deployment platform for frontend apps           |
+
+---
+
+## ✨ Features
+
+* 🎨 3D visual elements using React Three Fiber
+* 💡 Smooth scroll and interactive transitions
+* 🔍 Project highlights with tech stacks and descriptions
+* 📱 Fully responsive layout (Mobile-first)
+* 🎥 Motion-based animations for engagement
+* 🌙 Planned dark mode support
+* 📬 **Contact form (Coming Soon)**
+
+---
+
+## 📁 Project Structure
+
+```
+Portfolio/
+├── public/
+├── src/
+│   ├── assets/        # Images, logos, icons
+│   ├── components/    # Reusable components
+│   ├── sections/      # Home, About, Projects, etc.
+│   ├── 3D/            # Three.js / R3F scenes and canvases
+│   └── main.tsx
+├── index.html
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+To run the project locally:
+
+```bash
+git clone https://github.com/vatsalyar/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
 ```
+
+Then open your browser at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🗓 Roadmap
+
+* [x] Add Three.js-based 3D hero section
+* [x] Include project highlights and skills
+* [ ] Add contact form using EmailJS or a serverless function
+* [ ] Implement dark mode toggle
+* [ ] Blog / article section for thoughts and tutorials
+* [ ] SEO optimization
+
+---
+
+## 🤝 Connect With Me
+
+* 🌐 Website: [vatsalyar.vercel.app](https://vatsalyar.vercel.app)
+* 💼 LinkedIn: [linkedin.com/in/vatsalyar](https://linkedin.com/in/vatsalyar)
+* 🧑‍💻 GitHub: [github.com/vatsalyar](https://github.com/vatsalyar)
+* 📧 Email: [rastogivatsalya@gmail.com](mailto:rastogivatsalya@gmail.com)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+> Made with React, 3D, and a lot of ❤️ by Vatsalya Rastogi
