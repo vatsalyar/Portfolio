@@ -36,7 +36,7 @@ const About = () => {
           Hey! I'm Vatsalya — a developer who enjoys crafting beautiful, scalable web experiences. I specialize in building full-stack apps using React, TypeScript, Tailwind CSS, and Firebase.
         </p>
 
-        <div className="flex flex-wrap gap-3 pt-2">
+        {/* <div className="flex flex-wrap gap-3 pt-2">
           {['React', 'Tailwind CSS', 'TypeScript', 'Firebase', 'Node.js', 'Figma'].map((skill, i) => (
             <span
               key={i}
@@ -45,7 +45,7 @@ const About = () => {
               {skill}
             </span>
           ))}
-        </div>
+        </div> */}
         <div className='flex gap-3 sm:gap-7'><a
           href="https://www.linkedin.com/in/vatsalya-rastogi/"
           target="_blank"

@@ -15,31 +15,37 @@ const StarCanvas = () => {
       y: Math.random() * window.innerHeight,
       r: Math.random() * 1.2,
       opacity: Math.random(),
-      dx: (Math.random() - 0.5) * 0.3,
-      dy: (Math.random() - 0.5) * 0.3,
+      dx: (Math.random() - 0.5) * 0.75,
+      dy: (Math.random() - 0.5) * 0.75,
     }));
 
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
+      ctx.setTransform(1, 0, 0, 1, 0, 0); 
+      ctx.scale(dpr, dpr);
     };
+
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
     const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
       stars.forEach((star) => {
-        star.opacity += (Math.random() - 0.5) * 0.05;
+        star.opacity += (Math.random() - 0.5) * 0.15;
         star.opacity = Math.max(0.1, Math.min(star.opacity, 1));
 
         star.x += star.dx;
         star.y += star.dy;
 
-        if (star.x < 0) star.x = canvas.width;
-        if (star.y < 0) star.y = canvas.height;
-        if (star.x > canvas.width) star.x = 0;
-        if (star.y > canvas.height) star.y = 0;
+        if (star.x < 0) star.x = window.innerWidth;
+        if (star.y < 0) star.y = window.innerHeight;
+        if (star.x > window.innerWidth) star.x = 0;
+        if (star.y > window.innerHeight) star.y = 0;
 
         ctx.beginPath();
         ctx.globalAlpha = star.opacity;
@@ -58,7 +64,11 @@ const StarCanvas = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="fixed inset-0 -z-10" />;
+  return (
+    <canvas
+      ref={canvasRef}
+    />
+  );
 };
 
 export default StarCanvas;
