@@ -5,6 +5,10 @@ import { Hologram } from "./Hologram";
 
 export const Moon = ({
   name,
+  experience,
+  projectsAppliedIn,
+  projectName,
+  status,
   distance,
   speed,
   parentPosition,
@@ -13,6 +17,10 @@ export const Moon = ({
   setCameraPosition
 }: {
   name: string;
+  experience: string;
+  projectsAppliedIn: string;
+  projectName: string;
+  status: string;
   distance: number;
   speed: number;
   parentPosition: THREE.Vector3;
@@ -91,6 +99,10 @@ export const Moon = ({
       {isHologramVisible && frozenHologramPosition && (
         <Hologram
           name={name}
+          experience={experience}
+          projectsAppliedIn={projectsAppliedIn}
+          projectName={projectName}
+          status={status}
           onClose={handleCloseHologram}
         />
       )}

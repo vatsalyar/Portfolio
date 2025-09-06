@@ -11,58 +11,212 @@ const skills = [
   {
     name: "Languages",
     tools: {
-      Python: "Versatile language for scripting, data, and backend.",
-      C: "Low-level systems programming.",
-      Java: "OOP and enterprise-grade development.",
-      JavaScript: "Dynamic web development.",
-      TypeScript: "Typed superset of JavaScript.",
+      Python: {
+        description: "Versatile language for scripting, data, and backend.",
+        experience: "3 years",
+        projectsAppliedIn: "Data Analysis, Backend APIs",
+        projectName: "AI Research Project",
+        status: "ACTIVE"
+      },
+      C: {
+        description: "Low-level systems programming.",
+        experience: "3 years",
+        projectsAppliedIn: "System Programming, Algorithms",
+        projectName: "Operating System Course",
+        status: "LEARNING"
+      },
+      Java: {
+        description: "OOP and enterprise-grade development.",
+        experience: "3 years",
+        projectsAppliedIn: "Enterprise Applications, Android",
+        projectName: "OOP and enterprise-grade development.",
+        status: "ACTIVE"
+      },
+      JavaScript: {
+        description: "Dynamic web development.",
+        experience: "2.5 years",
+        projectsAppliedIn: "Web Apps, Full-stack Projects",
+        projectName: "Reactutor",
+        status: "ACTIVE"
+      },
+      TypeScript: {
+        description: "Typed superset of JavaScript.",
+        experience: "2 years",
+        projectsAppliedIn: "React Apps, Node.js Backends",
+        projectName: "Portfolio Website",
+        status: "ACTIVE"
+      },
     },
     texturePath: "/textures/makemake.jpg",
   },
   {
     name: "Web & Frameworks",
     tools: {
-      React: "Declarative UI library.",
-      "Express.js": "Minimal backend web framework for Node.js.",
-      "Node.js": "JavaScript runtime for server-side development.",
-      Vite: "Fast frontend build tool.",
-      Tailwind: "Utility-first CSS framework.",
-      HTML: "Structure of web content.",
-      CSS: "Styling and layout.",
-      "Three.js": "3D graphics in the browser.",
-      FramerMotion: "Animation library for React.",
+      React: {
+        description: "Declarative UI library.",
+        experience: "2.5 years",
+        projectsAppliedIn: "Portfolio, E-commerce Apps",
+        projectName: "Portfolio, Reactutor, Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      "Express.js": {
+        description: "Minimal backend web framework for Node.js.",
+        experience: "2 years",
+        projectsAppliedIn: "REST APIs, Microservices",
+        projectName: "Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      "Node.js": {
+        description: "JavaScript runtime for server-side development.",
+        experience: "3 years",
+        projectsAppliedIn: "Backend Services, Real-time Apps",
+        projectName: "Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      Vite: {
+        description: "Fast frontend build tool.",
+        experience: "1.5 years",
+        projectsAppliedIn: "React Projects, Portfolio",
+        projectName: "Portfolio Website, Reactutor",
+        status: "ACTIVE"
+      },
+      Tailwind: {
+        description: "Utility-first CSS framework.",
+        experience: "2 years",
+        projectsAppliedIn: "UI Components, Responsive Design",
+        projectName: "Portfolio, Reactutor, Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      HTML: {
+        description: "Structure of web content.",
+        experience: "4 years",
+        projectsAppliedIn: "All Web Projects",
+        projectName: "Portfolio, Reactutor, Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      CSS: {
+        description: "Styling and layout.",
+        experience: "4 years",
+        projectsAppliedIn: "All Web Projects",
+        projectName: "Animated Landing Pages",
+        status: "ACTIVE"
+      },
+      "Three.js": {
+        description: "3D graphics in the browser.",
+        experience: "1 year",
+        projectsAppliedIn: "3D Portfolio, Interactive Demos",
+        projectName: "Portfolio Website",
+        status: "LEARNING"
+      },
+      FramerMotion: {
+        description: "Animation library for React.",
+        experience: "1 year",
+        projectsAppliedIn: "Portfolio Animations, UI Transitions",
+        projectName: "Portfolio Website",
+        status: "LEARNING"
+      },
     },
     texturePath: "/textures/venus.jpg",
   },
   {
     name: "Cloud & DevOps",
     tools: {
-      Firebase: "Backend as a service platform.",
-      "GitHub Actions": "CI/CD workflows for GitHub projects.",
-      Docker: "Containerization platform.",
-      "Docker Swarm": "Native clustering for Docker.",
-      "AWS S3": "Object storage service.",
-      "AWS EC2": "Scalable virtual servers.",
-      "AWS Lambda": "Serverless compute — learning in progress.",
+      Firebase: {
+        description: "Backend as a service platform.",
+        experience: "2 years",
+        projectsAppliedIn: "Firebase Storage, Authentication",
+        projectName: "Reactutor, Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      Docker: {
+        description: "Containerization platform.",
+        experience: "1 year",
+        projectsAppliedIn: "Microservices, Development Environment",
+        projectName: "Reactutor",
+        status: "LEARNING"
+      },
+      "AWS S3": {
+        description: "Object storage service.",
+        experience: "1 year",
+        projectsAppliedIn: "File Storage, Static Websites",
+        projectName: "Personal Projects",
+        status: "LEARNING"
+      },
+      "AWS EC2": {
+        description: "Scalable virtual servers.",
+        experience: "1 year",
+        projectsAppliedIn: "Web Hosting, API Servers",
+        projectName: "Personal Projects",
+        status: "LEARNING"
+      },
+      "AWS Lambda": {
+        description: "Serverless compute — learning in progress.",
+        experience: "6 months",
+        projectsAppliedIn: "Serverless Functions",
+        projectName: "Personal Projects",
+        status: "LEARNING"
+      },
     },
     texturePath: "/textures/earth.jpg",
   },
   {
     name: "Database",
     tools: {
-      MongoDB: "NoSQL document database.",
-      MySQL: "Relational database system.",
-      NoSQL: "Non-relational databases for flexible data models.",
-      Mongoose: "MongoDB ODM for Node.js.",
+      MongoDB: {
+        description: "NoSQL document database.",
+        experience: "2 years",
+        projectsAppliedIn: "Web Apps, Data Storage",
+        projectName: "Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      MySQL: {
+        description: "Relational database system.",
+        experience: "1.5 years",
+        projectsAppliedIn: "Web Applications, Data Management",
+        projectName: "Professional projects",
+        status: "ACTIVE"
+      },
+      NoSQL: {
+        description: "Non-relational databases for flexible data models.",
+        experience: "2 years",
+        projectsAppliedIn: "Scalable Applications, Real-time Data",
+        projectName: "Professional projects, Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
+      Mongoose: {
+        description: "MongoDB ODM for Node.js.",
+        experience: "1.5 years",
+        projectsAppliedIn: "Node.js Backends, API Development",
+        projectName: "Virtual Bank of Canada",
+        status: "ACTIVE"
+      },
     },
     texturePath: "/textures/mars.jpg",
   },
   {
     name: "Mission Control",
     tools: {
-      "CI/CD pipelines": "Automated build, test, and deploy processes.",
-      "AGILE Methodologies": "Iterative project management.",
-      "REST APIs": "Standard for client-server communication.",
+      "CI/CD": {
+        description: "Automated build, test, and deploy processes.",
+        experience: "8 months",
+        projectsAppliedIn: "All Projects, GitHub Actions",
+        projectName: "Professional projects",
+        status: "LEARNING"
+      },
+      "AGILE": {
+        description: "Iterative project management.",
+        experience: "1 year",
+        projectsAppliedIn: "Team Projects, Sprint Planning",
+        projectName: "Professional projects",
+        status: "LEARNING"
+      },
+      "REST APIs": {
+        description: "Standard for client-server communication.",
+        experience: "1.5 years",
+        projectsAppliedIn: "Backend Services, Microservices",
+        projectName: "Professional projects",
+        status: "ACTIVE"
+      },
     },
     texturePath: "/textures/jupiter.jpg",
   },
@@ -179,10 +333,14 @@ export const Tech = () => {
               >
                 {(planetPos) =>
                   selectedSkill === skill.name &&
-                  Object.entries(skill.tools).map(([toolName], index) => (
+                  Object.entries(skill.tools).map(([toolName, toolData], index) => (
                     <Moon
                       key={toolName}
                       name={toolName}
+                      experience={toolData.experience}
+                      projectsAppliedIn={toolData.projectsAppliedIn}
+                      projectName={toolData.projectName}
+                      status={toolData.status}
                       distance={3 + index * 0.75}
                       speed={0.001}
                       parentPosition={planetPos}

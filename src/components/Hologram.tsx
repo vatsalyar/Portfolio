@@ -6,9 +6,17 @@ import { useIsMobile } from "@/hooks/useIsMobile";
 
 export const Hologram = ({
   name,
+  experience,
+  projectsAppliedIn,
+  projectName,
+  status,
   onClose,
 }: {
   name: string;
+  experience: string;
+  projectsAppliedIn: string;
+  projectName: string;
+  status: string;
   onClose?: () => void;
 }) => {
   const hologramRef = useRef<THREE.Group>(null);
@@ -24,12 +32,12 @@ export const Hologram = ({
   // 🔥 Skill data mapped to space-style labels
   const skillData = useMemo(
     () => ({
-      years: "2.5 years", // ORBITAL VELOCITY
-      projects: "4 Projects", // ENERGY OUTPUT
-      context: "Hackathon + Personal", // IMPACT RADIUS
-      status: Math.random() > 0.5 ? "ACTIVE" : "LEARNING", // STATUS
+      years: experience, // ORBITAL VELOCITY
+      projects: projectsAppliedIn, // ENERGY OUTPUT
+      context: projectName, // IMPACT RADIUS
+      status: status, // STATUS
     }),
-    []
+    [experience, projectsAppliedIn, projectName, status]
   );
 
   const isMobile = useIsMobile();
@@ -311,7 +319,7 @@ export const Hologram = ({
           color="#FFD700"
           anchorX="left"
         >
-          ORBITAL VELOCITY
+          AGE
         </Text>
         <Text
           position={[-4.5, 1.5, 0.02]}
@@ -345,7 +353,7 @@ export const Hologram = ({
           color="#FFD700"
           anchorX="left"
         >
-          IMPACT RADIUS
+          SOLAR SYSTEM
         </Text>
         <Text
           position={[-4.5, -0.9, 0.02]}
