@@ -6,8 +6,43 @@ import vbc from "../assets/VBC.png";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
+// Tech logos
+import reactLogo from "../assets/Tech/react-1.svg";
+import typescriptLogo from "../assets/Tech/typescript.svg";
+import awsLogo from "../assets/Tech/aws-2.svg";
+import firebaseLogo from "../assets/Tech/firebase-1.svg";
+import sandpackLogo from "../assets/Tech/sandpack.svg";
+import tailwindLogo from "../assets/Tech/tailwind-css-2.svg";
+import framerLogo from "../assets/Tech/framer-motion.svg";
+import grokLogo from "../assets/Tech/grok-1.svg";
+import javascriptLogo from "../assets/Tech/javascript-1.svg";
+import nodejsLogo from "../assets/Tech/nodejs-2.svg";
+import expressLogo from "../assets/Tech/expressjs.svg";
+import mongodbLogo from "../assets/Tech/mongodb-icon-1.svg";
+import viteLogo from "../assets/Tech/vitejs.svg";
+
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
+
+  // Tech logo mapping
+  const getTechLogo = (techName: string) => {
+    const logoMap: { [key: string]: string } = {
+      "React": reactLogo,
+      "TypeScript": typescriptLogo,
+      "AWS": awsLogo,
+      "Firebase Storage": firebaseLogo,
+      "SandboxAPI": sandpackLogo,
+      "TailwindCSS": tailwindLogo,
+      "Framer Motion": framerLogo,
+      "Groq-AI": grokLogo,
+      "JavaScript": javascriptLogo,
+      "Node.js": nodejsLogo,
+      "Express": expressLogo,
+      "MongoDB": mongodbLogo,
+      "Vite": viteLogo,
+    };
+    return logoMap[techName] || "";
+  };
 
   const projectDescriptions = [
     {
@@ -198,8 +233,11 @@ const Projects = () => {
                     }}
                     className="flex items-center gap-2 px-3 py-1.5 bg-[#181818] text-gray-100 text-sm font-medium rounded-full border border-white/10 shadow-sm"
                   >
-                    {/* Logo placeholder — replace with actual logo if desired */}
-                    <div className="w-4 h-4 rounded-sm bg-white/80" />
+                    <img 
+                      src={getTechLogo(tech)} 
+                      alt={`${tech} logo`}
+                      className="w-4 h-4 object-contain"
+                    />
                     {tech}
                   </motion.div>
                 ))}

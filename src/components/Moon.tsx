@@ -84,6 +84,7 @@ export const Moon = ({
         onPointerOver={() => (document.body.style.cursor = "pointer")}
         onPointerOut={() => (document.body.style.cursor = "default")}
         onClick={handleClick}
+        renderOrder={999}
       >
         <sphereGeometry args={[0.65, 16, 16]} />
         <meshStandardMaterial map={texture} />
@@ -92,7 +93,6 @@ export const Moon = ({
       {isHologramVisible && frozenHologramPosition && (
         <Hologram
           name={name}
-          description={description}
           onClose={handleCloseHologram}
         />
       )}

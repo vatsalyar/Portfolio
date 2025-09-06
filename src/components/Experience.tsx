@@ -6,29 +6,42 @@ import {
 import { motion } from "framer-motion";
 import city from "../assets/city.png";
 import uow from "../assets/uow.jpg";
+import eztrackrLogo from "../assets/eztrackrLogo.svg";
+import glendor from "../assets/glendor.svg";
 import "react-vertical-timeline-component/style.min.css";
 
 const experiences = [
   {
-    title: "TA - Algorithms and Programming II",
-    company_name: "University of Windsor",
-    icon: uow,
-    date: "Jan 2025 - Apr 2025",
+    title: "AI Research Intern",
+    company_name: "Glendor",
+    icon: glendor,
+    date: "Sep 2025 - Present",
     points: [
-      "Delivered interactive lab sessions for classes of 25+ students, focusing on advanced programming concepts such as time and space complexities of high-level algorithms and data structures.",
-      "Guided students in debugging code and mastering C/C++ programming techniques, fostering a 20% improvement in overall lab performance.",
-      "Evaluated assignments and exams with meticulous attention to fairness and accuracy.",
+      "Analyzed Federated Learning methods and models in AI/Medicine/Privacy sectors",
+      "Developed automatic tools for PHI deidentification in medical images and data",
+      "Contributed to scalable solutions enabling medical research data sharing while protecting patient privacy"
     ],
   },
   {
-    title: "TA - Key Concepts in Computer Science",
+    title: "Frontend Developer & Design System Architect",
+    company_name: "EZTRACKR INC.",
+    icon: eztrackrLogo,
+    date: "Jul 2025 - Sep 2025",
+    points: [
+      "Designed and implemented comprehensive design system with React, Tailwind CSS, and Shadcn",
+      "Built reusable component library with accessibility and responsive design standards",
+      "Delivered complete documentation and implementation support for production integration"
+    ],
+  },
+  {
+    title: "Teaching Assistant - Computer Science",
     company_name: "University of Windsor",
     icon: uow,
-    date: "Sep 2024 - Dec 2024",
+    date: "Sep 2024 - Apr 2025",
     points: [
-      "Conducted lab sessions for a class of 20 students, addressing individual and group questions on foundational topics in computer science, including propositional logic, proof techniques, and basic mathematics",
-      "Graded over 80 assignments and exams, ensuring fair evaluation and adherence to academic integrity; assisted in proctoring examinations for up to 150 students, supervising a secure testing environment",
-      "Provided office hours for personalized support, enhancing student understanding and contributing to a 15% increase in overall course performance.",
+      "Conducted lab sessions for 20-25 students in Algorithms, Programming, and CS fundamentals",
+      "Guided students in C/C++ programming, debugging, and advanced algorithm concepts",
+      "Graded 160+ assignments/exams and provided office hours, improving course performance by 15-20%"
     ],
   },
   {
@@ -37,9 +50,9 @@ const experiences = [
     icon: city,
     date: "May 2024 - Aug 2024",
     points: [
-      "Collaborated with a team to maintain 10+ city parks, focusing on environmental stewardship and community beautification, directly impacting local quality of life",
-      "Developed teamwork, time management, and communication skills while contributing to a positive work atmosphere during summer months",
-      "Performed essential tasks, including cutting grass, collecting litter, setting up baseball fields, and cleaning restrooms, ensuring a safe and welcoming environment for over 500 park visitors daily",
+      "Maintained 10+ city parks focusing on environmental stewardship and community beautification",
+      "Performed essential maintenance tasks including grass cutting, litter collection, and facility cleaning",
+      "Developed teamwork and communication skills while serving 500+ daily park visitors"
     ],
   },
 ];
