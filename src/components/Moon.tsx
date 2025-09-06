@@ -5,7 +5,6 @@ import { Hologram } from "./Hologram";
 
 export const Moon = ({
   name,
-  description,
   distance,
   speed,
   parentPosition,
@@ -14,7 +13,6 @@ export const Moon = ({
   setCameraPosition
 }: {
   name: string;
-  description: string;
   distance: number;
   speed: number;
   parentPosition: THREE.Vector3;

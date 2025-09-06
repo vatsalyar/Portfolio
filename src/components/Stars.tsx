@@ -10,7 +10,7 @@ const StarCanvas = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    let stars = Array.from({ length: 200 }, () => ({
+    const stars = Array.from({ length: 200 }, () => ({
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
       r: Math.random() * 1.2,

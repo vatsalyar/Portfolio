@@ -155,49 +155,46 @@ export const Tech = () => {
         <OrbitControls enableZoom={isMobile} enablePan={false} enableRotate />
         
 
-        {true && (
-          <>
-            <mesh>
-              <sphereGeometry args={[1.75, 32, 32]} />
-              <meshStandardMaterial map={texture} />
-            </mesh>
+        <>
+          <mesh>
+            <sphereGeometry args={[1.75, 32, 32]} />
+            <meshStandardMaterial map={texture} />
+          </mesh>
 
-            {skills
-              .filter((skill) => !selectedSkill || skill.name === selectedSkill)
-              .map((skill, i) => (
-                <Planet
-                  key={skill.name}
-                  {...skill}
-                  name={skill.name}
-                  speed={selectedSkill ? 0 : 0.001 + i * 0.0001}
-                  orbitRadius={selectedSkill ? 0 : 5 + i * 2}
-                  size={selectedSkill ? 2 : 1}
-                  startAngle={(i * Math.PI) / 3}
-                  onClick={handlePlanetClick}
-                  isPlanetSelected={isPlanetSelected}
-                  setIsPlanetSelected={setIsPlanetSelected}
-                  isSelected={selectedSkill === skill.name || !selectedSkill}
-                >
-                  {(planetPos) =>
-                    selectedSkill === skill.name &&
-                    Object.entries(skill.tools).map(([toolName, description], index) => (
-                      <Moon
-                        key={toolName}
-                        name={toolName}
-                        description={description}
-                        distance={3 + index * 0.75}
-                        speed={0.001}
-                        parentPosition={planetPos}
-                        setIsHologramVisible={setIsAnyHologramVisible}
-                        isHologramVisible={isAnyHologramVisible}
-                        setCameraPosition={setCameraPosition}
-                      />
-                    ))
-                  }
-                </Planet>
-            ))}
-          </>
-        )}
+          {skills
+            .filter((skill) => !selectedSkill || skill.name === selectedSkill)
+            .map((skill, i) => (
+              <Planet
+                key={skill.name}
+                {...skill}
+                name={skill.name}
+                speed={selectedSkill ? 0 : 0.001 + i * 0.0001}
+                orbitRadius={selectedSkill ? 0 : 5 + i * 2}
+                size={selectedSkill ? 2 : 1}
+                startAngle={(i * Math.PI) / 3}
+                onClick={handlePlanetClick}
+                isPlanetSelected={isPlanetSelected}
+                setIsPlanetSelected={setIsPlanetSelected}
+                isSelected={selectedSkill === skill.name || !selectedSkill}
+              >
+                {(planetPos) =>
+                  selectedSkill === skill.name &&
+                  Object.entries(skill.tools).map(([toolName], index) => (
+                    <Moon
+                      key={toolName}
+                      name={toolName}
+                      distance={3 + index * 0.75}
+                      speed={0.001}
+                      parentPosition={planetPos}
+                      setIsHologramVisible={setIsAnyHologramVisible}
+                      isHologramVisible={isAnyHologramVisible}
+                      setCameraPosition={setCameraPosition}
+                    />
+                  ))
+                }
+              </Planet>
+          ))}
+        </>
 
         {/* {selectedData && (
           <Planet
