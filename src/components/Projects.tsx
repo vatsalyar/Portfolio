@@ -64,24 +64,6 @@ const Projects = () => {
       bgcolor: "bg-blue-500"
     },
     {
-      title: "Virtual Bank of Canada",
-      tagline: "Bank smarter, track better — your finances, redefined.",
-      desc: "A robust banking application that empowers users to manage transactions, monitor financial activity, and access a personalized dashboard showcasing recent activity. Built for scalability and security.",
-      img: vbc,
-      link: "https://github.com/vatsalyar",
-      tech: ["React", "JavaScript", "Node.js", "Express", "MongoDB", "TailwindCSS", "Framer Motion"],
-      features: [
-        "Enables users to manage transactions and track financial activity efficiently",
-        "Provides a personalized dashboard displaying recent transactions",
-        "Prioritizes backend architecture with plans for advanced security",
-      ],
-      gradient: "bg-gradient-to-t from-[#0f0f0f] via-[#1c1c1c] to-[#3b1f1f]",
-      shadow: "shadow-[0_0_30px_#ef4444]",
-      taglineColor: "text-red-300",
-      descColor: "text-red-700",
-      bgcolor: "bg-red-700"
-    },
-    {
       title: "Personal Portfolio",
       tagline: "A digital reflection of my craft — where code meets creativity.",
       desc: "My personal portfolio website showcases my skills as a full-stack developer through projects, blogs, and modern design. It's clean, responsive, and optimized for performance.",
@@ -98,6 +80,24 @@ const Projects = () => {
       taglineColor: "text-orange-300",
       descColor: "text-orange-500",
       bgcolor: "bg-orange-500"
+    },
+    {
+      title: "Virtual Bank of Canada",
+      tagline: "Bank smarter, track better — your finances, redefined.",
+      desc: "A robust banking application that empowers users to manage transactions, monitor financial activity, and access a personalized dashboard showcasing recent activity. Built for scalability and security.",
+      img: vbc,
+      link: "https://github.com/vatsalyar",
+      tech: ["React", "JavaScript", "Node.js", "Express", "MongoDB", "TailwindCSS", "Framer Motion"],
+      features: [
+        "Enables users to manage transactions and track financial activity efficiently",
+        "Provides a personalized dashboard displaying recent transactions",
+        "Prioritizes backend architecture with plans for advanced security",
+      ],
+      gradient: "bg-gradient-to-t from-[#0f0f0f] via-[#1c1c1c] to-[#3b1f1f]",
+      shadow: "shadow-[0_0_30px_#ef4444]",
+      taglineColor: "text-red-300",
+      descColor: "text-red-700",
+      bgcolor: "bg-red-700"
     },
   ];
 

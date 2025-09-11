@@ -2,8 +2,10 @@ import { hi } from "@/assets";
 import { useEffect, useState } from "react";
 import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { motion } from 'framer-motion';
+import Magnet from './Magnet.tsx';
+
 
 
 const Hero = () => {
@@ -82,39 +84,41 @@ const Hero = () => {
           <div className=" lg:mx-7 md:mx-5 "><Statement /></div>
           <div className="flex gap-4">
             <LiveButton />
-            <a
-                  href="https://linkedin.com/in/vatsalya-rastogi/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    group
-                    flex items-center gap-2
-                    rounded-full
-                    bg-white/10
-                    backdrop-blur-md
-                    text-white
-                    px-4 py-2
-                    text-xs
-                    font-semibold
-                    transition-all duration-500 ease-in-out
-                    hover:bg-white hover:text-black hover:shadow-lg hover:scale-105
-                    ring-1 ring-white/20 hover:ring-black/30
-                    focus:outline-none focus:ring-2 focus:ring-blue-400
-                  "
-                >
-                  <span>Let's Connect</span>
-                  <span
+            <Magnet padding={50}>
+              <a
+                    href="https://linkedin.com/in/vatsalya-rastogi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="
-                      flex items-center justify-center
+                      group
+                      flex items-center gap-2
                       rounded-full
-                      bg-white text-black
-                      p-1
-                      transition-all duration-300
-                      "
+                      bg-white/10
+                      backdrop-blur-md
+                      text-white
+                      px-4 py-2
+                      text-xs
+                      font-semibold
+                      transition-all duration-500 ease-in-out
+                      hover:bg-white hover:text-black hover:shadow-lg hover:scale-105
+                      ring-1 ring-white/20 hover:ring-black/30
+                      focus:outline-none focus:ring-2 focus:ring-blue-400
+                    "
                   >
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </span>
-                </a>
+                    <span>Let's Connect</span>
+                    <span
+                      className="
+                        flex items-center justify-center
+                        rounded-full
+                        bg-white text-black
+                        p-1
+                        transition-all duration-300
+                        "
+                    >
+                      <FontAwesomeIcon icon={faArrowRight} />
+                    </span>
+              </a>
+            </Magnet>
               </div>
         </div>
       </section>
@@ -137,22 +141,24 @@ const Statement = () => (
 )
 
 const LiveButton = () => (
+  <Magnet padding={50}>
   <a
     target="_blank"
     rel="noopener noreferrer"
-    href="https://reactutor.vatsalya.wiki"
-    className="group backdrop-blur-md bg-white/10 rounded-full text-white flex p-2 gap-2 items-center hover:border text-xs font-bold transition-all ease-in-out w-fit"
+    href="/resume.pdf"
+    className="group backdrop-blur-md bg-white/10 rounded-full text-white flex p-2 gap-1 items-center hover:border text-xs font-bold transition-all ease-in-out w-fit"
   >
-    <div className="bg-blue-500 rounded-full px-2 py-0.5 text-white text-[10px] font-semibold">
-      New
-    </div>
-    <span className="flex items-center gap-1 light-sweep">
-      Reactutor is live!
+    <span className="flex items-center justify-center w-6 h-6">
+      <FontAwesomeIcon icon={faFilePdf} />
+    </span>
+    <span className="flex items-center gap-1 light-sweep pr-1">
+      View My Resume
     </span>
     <span className="transform transition-transform duration-150 group-hover:translate-x-1">
         <FontAwesomeIcon icon={faArrowRight} />
     </span>
   </a>
+  </Magnet>
 );
 
 interface TypingTextProps {

@@ -1,3 +1,4 @@
+import Magnet from './Magnet.jsx';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -46,49 +47,60 @@ const About = () => {
             </span>
           ))}
         </div> */}
-        <div className='flex gap-3 sm:gap-7'><a
-          href="https://www.linkedin.com/in/vatsalya-rastogi/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
-          />
-        </a>
-        <a
-          href="mailto:vatsalyarastogi04@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
-        >
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
-          />
-        </a><a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
-        >
-          <FontAwesomeIcon
-            icon={faFilePdf}
-            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
-          />
-        </a><a
-          href="https://github.com/vatsalyar"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
-          />
-        </a>
-      </div>
+        <div className='flex gap-3 sm:gap-7'>
+          <Magnet padding={10}>
+            <a
+              href="https://www.linkedin.com/in/vatsalya-rastogi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+              />
+            </a>
+          </Magnet>
+          <Magnet padding={10}>
+            <a
+              href="mailto:vatsalyarastogi04@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+            >
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+              />
+            </a>
+          </Magnet>
+          <Magnet padding={10}>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+            >
+              <FontAwesomeIcon
+                icon={faFilePdf}
+                className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+              />
+            </a>
+          </Magnet>
+          <Magnet padding={10}>
+            <a
+              href="https://github.com/vatsalyar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-white to-zinc-200 shadow-lg hover:scale-110 transition-transform duration-300"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-gray-950 text-4xl group-hover:animate-bounce transition duration-300"
+              />
+            </a>
+          </Magnet>
+        </div>
       </div>
     </section>
   );
