@@ -6,6 +6,7 @@ import StarCanvas from "./components/Stars";
 import Experience from "./components/Experience";
 import { Tech } from "./components/Tech";
 import bg from "./assets/wave.jpg";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
             <About />
           </section>
         </div>
+        <Analytics />
       </div>
   );
 };

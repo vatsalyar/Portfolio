@@ -21,6 +21,7 @@
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.7",
     "@tippyjs/react": "^4.2.6",
+    "@vercel/analytics": "^2.0.1",
     "aos": "^2.3.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
